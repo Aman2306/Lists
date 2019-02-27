@@ -8,20 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		A603A5002226CD56009AF0F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A603A4FF2226CD56009AF0F9 /* AppDelegate.swift */; };
-		A603A5022226CD56009AF0F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A603A5012226CD56009AF0F9 /* ViewController.swift */; };
 		A603A5052226CD56009AF0F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A603A5032226CD56009AF0F9 /* Main.storyboard */; };
 		A603A5072226CD59009AF0F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A603A5062226CD59009AF0F9 /* Assets.xcassets */; };
 		A603A50A2226CD59009AF0F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A603A5082226CD59009AF0F9 /* LaunchScreen.storyboard */; };
+		A603A5122226CEC1009AF0F9 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A603A5112226CEC1009AF0F9 /* AllListsViewController.swift */; };
+		A603A5142226CED3009AF0F9 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A603A5132226CED3009AF0F9 /* ShoppingListViewController.swift */; };
+		A603A5162226CEDF009AF0F9 /* EditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A603A5152226CEDF009AF0F9 /* EditItemViewController.swift */; };
+		A603A5192226CF8B009AF0F9 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A603A5182226CF8B009AF0F9 /* ShoppingList.swift */; };
+		A603A51B2226CFA3009AF0F9 /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A603A51A2226CFA3009AF0F9 /* NotificationNameExtension.swift */; };
+		A603A5212226D418009AF0F9 /* ShoppingListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A603A51F2226D418009AF0F9 /* ShoppingListItemCell.swift */; };
+		A603A5222226D418009AF0F9 /* ShoppingListItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A603A5202226D418009AF0F9 /* ShoppingListItemCell.xib */; };
+		A603A5252226D42F009AF0F9 /* ShoppingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A603A5232226D42F009AF0F9 /* ShoppingListCell.swift */; };
+		A603A5262226D42F009AF0F9 /* ShoppingListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A603A5242226D42F009AF0F9 /* ShoppingListCell.xib */; };
+		A62CBA3E2226EC91007644B8 /* RenameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62CBA3D2226EC91007644B8 /* RenameListView.swift */; };
+		A62CBA422226ECC0007644B8 /* RenameListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A62CBA402226ECC0007644B8 /* RenameListView.xib */; };
+		A62CBA442226F847007644B8 /* EditItemViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62CBA432226F847007644B8 /* EditItemViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A603A4FC2226CD56009AF0F9 /* Lists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A603A4FF2226CD56009AF0F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A603A5012226CD56009AF0F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A603A5042226CD56009AF0F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A603A5062226CD59009AF0F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A603A5092226CD59009AF0F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A603A50B2226CD59009AF0F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A603A5112226CEC1009AF0F9 /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
+		A603A5132226CED3009AF0F9 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
+		A603A5152226CEDF009AF0F9 /* EditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewController.swift; sourceTree = "<group>"; };
+		A603A5182226CF8B009AF0F9 /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		A603A51A2226CFA3009AF0F9 /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
+		A603A51F2226D418009AF0F9 /* ShoppingListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListItemCell.swift; sourceTree = "<group>"; };
+		A603A5202226D418009AF0F9 /* ShoppingListItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingListItemCell.xib; sourceTree = "<group>"; };
+		A603A5232226D42F009AF0F9 /* ShoppingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListCell.swift; sourceTree = "<group>"; };
+		A603A5242226D42F009AF0F9 /* ShoppingListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingListCell.xib; sourceTree = "<group>"; };
+		A62CBA3D2226EC91007644B8 /* RenameListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameListView.swift; sourceTree = "<group>"; };
+		A62CBA402226ECC0007644B8 /* RenameListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RenameListView.xib; sourceTree = "<group>"; };
+		A62CBA432226F847007644B8 /* EditItemViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +76,57 @@
 		A603A4FE2226CD56009AF0F9 /* Lists */ = {
 			isa = PBXGroup;
 			children = (
+				A603A51E2226D3F0009AF0F9 /* Custom Views */,
+				A603A51D2226D3D7009AF0F9 /* Custom Cells */,
+				A603A51C2226D02A009AF0F9 /* Essential */,
+				A603A5172226CEF1009AF0F9 /* View Controller */,
 				A603A4FF2226CD56009AF0F9 /* AppDelegate.swift */,
-				A603A5012226CD56009AF0F9 /* ViewController.swift */,
 				A603A5032226CD56009AF0F9 /* Main.storyboard */,
 				A603A5062226CD59009AF0F9 /* Assets.xcassets */,
 				A603A5082226CD59009AF0F9 /* LaunchScreen.storyboard */,
 				A603A50B2226CD59009AF0F9 /* Info.plist */,
 			);
 			path = Lists;
+			sourceTree = "<group>";
+		};
+		A603A5172226CEF1009AF0F9 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A603A5112226CEC1009AF0F9 /* AllListsViewController.swift */,
+				A603A5132226CED3009AF0F9 /* ShoppingListViewController.swift */,
+				A603A5152226CEDF009AF0F9 /* EditItemViewController.swift */,
+				A62CBA432226F847007644B8 /* EditItemViewControllerDelegate.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A603A51C2226D02A009AF0F9 /* Essential */ = {
+			isa = PBXGroup;
+			children = (
+				A603A5182226CF8B009AF0F9 /* ShoppingList.swift */,
+				A603A51A2226CFA3009AF0F9 /* NotificationNameExtension.swift */,
+			);
+			path = Essential;
+			sourceTree = "<group>";
+		};
+		A603A51D2226D3D7009AF0F9 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A603A51F2226D418009AF0F9 /* ShoppingListItemCell.swift */,
+				A603A5202226D418009AF0F9 /* ShoppingListItemCell.xib */,
+				A603A5232226D42F009AF0F9 /* ShoppingListCell.swift */,
+				A603A5242226D42F009AF0F9 /* ShoppingListCell.xib */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		A603A51E2226D3F0009AF0F9 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				A62CBA3D2226EC91007644B8 /* RenameListView.swift */,
+				A62CBA402226ECC0007644B8 /* RenameListView.xib */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +187,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A62CBA422226ECC0007644B8 /* RenameListView.xib in Resources */,
+				A603A5222226D418009AF0F9 /* ShoppingListItemCell.xib in Resources */,
 				A603A50A2226CD59009AF0F9 /* LaunchScreen.storyboard in Resources */,
 				A603A5072226CD59009AF0F9 /* Assets.xcassets in Resources */,
+				A603A5262226D42F009AF0F9 /* ShoppingListCell.xib in Resources */,
 				A603A5052226CD56009AF0F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +203,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A603A5022226CD56009AF0F9 /* ViewController.swift in Sources */,
+				A603A5212226D418009AF0F9 /* ShoppingListItemCell.swift in Sources */,
 				A603A5002226CD56009AF0F9 /* AppDelegate.swift in Sources */,
+				A603A5122226CEC1009AF0F9 /* AllListsViewController.swift in Sources */,
+				A62CBA3E2226EC91007644B8 /* RenameListView.swift in Sources */,
+				A603A5192226CF8B009AF0F9 /* ShoppingList.swift in Sources */,
+				A603A51B2226CFA3009AF0F9 /* NotificationNameExtension.swift in Sources */,
+				A603A5252226D42F009AF0F9 /* ShoppingListCell.swift in Sources */,
+				A603A5142226CED3009AF0F9 /* ShoppingListViewController.swift in Sources */,
+				A62CBA442226F847007644B8 /* EditItemViewControllerDelegate.swift in Sources */,
+				A603A5162226CEDF009AF0F9 /* EditItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
