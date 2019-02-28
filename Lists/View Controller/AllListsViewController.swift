@@ -30,8 +30,19 @@ class AllListsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(handleDidCreateShoppingList(notification:)), name: .didCreateShoppingList, object: nil)
+    }
+    
+    @objc func handleDidCreateShoppingList(notification: Notification) {
+        if let items = notification.object as? [String] {
+            let newShoppingList = ShoppingList(id: listManager.getNextListID(),
+                                               name: "Shopping List",
+                                               editTimestamp: Date.timeIntervalSinceReferenceDate,
+                                               items: items)
+            
+            listManager.add(list: newShoppingList)
+            tableView.reloadData()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -111,7 +122,6 @@ class AllListsViewController: UIViewController {
             
             
             // Add action handlers here!
-            
             
         }
     }

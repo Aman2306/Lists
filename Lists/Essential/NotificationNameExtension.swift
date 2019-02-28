@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+extension Notification.Name {
+    static let didCreateShoppingList = Notification.Name("didCreateShoppingList")
+    static let didUpdateShoppingList = Notification.Name("didUpdateShoppingList")
+}

@@ -91,7 +91,11 @@ class ShoppingListViewController: UIViewController {
     
     
     func updateParent() {
-        
+        if shoppingList.items.count > 0 {
+            NotificationCenter.default.post(name: .didCreateShoppingList,
+                                            object: shoppingList.items,
+                                            userInfo: nil)
+        }
     }
     
     
