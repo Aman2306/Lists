@@ -74,9 +74,17 @@ class EditItemViewController: UIViewController {
         if text != "" {
             if let delegate = delegate {
                 if !delegate.isItemPresent(item: text) {
-                    // Item doesn't exist in the items collection,
-                    // so let's add it now.
-                    delegate.shouldAdd(item: text)
+                    
+                    if let editedItem = editedItem {
+                        // This is the point of interest.
+                        // If the editedItem is not nil, then an item is being edited.
+                        delegate.shouldReplace(item: editedItem, withItem: text)
+                    } else {
+                        // Item doesn't exist in the items collection,
+                        // so let's add it now.
+                        delegate.shouldAdd(item: text)
+                    }
+                    
                     navigationController?.popViewController(animated: true)
                     
                 } else {
@@ -93,11 +101,16 @@ class EditItemViewController: UIViewController {
     }
     
     @IBAction func deleteItem(_ sender: Any) {
+        guard let text = textField.text else { return }
+        
+        if let delegate = delegate {
+            delegate.shouldRemove(item: text)
+            navigationController?.popViewController(animated: true)
+        }
     }
     
     
 }
-
 
 
 

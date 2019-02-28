@@ -10,5 +10,7 @@ import Foundation
 
 protocol EditItemViewControllerDelegate {
     func shouldAdd(item: String)
-    func isItemPresent(item: String) -> Bool   
+    func isItemPresent(item: String) -> Bool
+    func shouldReplace(item: String, withItem newItem: String)
+    func shouldRemove(item: String)
 }
