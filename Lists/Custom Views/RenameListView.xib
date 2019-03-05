@@ -12,13 +12,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="re" customModule="Lists" customModuleProvider="target">
             <connections>
-                <outlet property="rename" destination="Z0Y-zY-Yr5" id="xWS-pd-iZP"/>
+                <outlet property="rename" destination="Z0Y-zY-Yr5" id="mcX-db-Vwy"/>
                 <outlet property="textField" destination="l3m-7x-IT1" id="Rx0-Sr-U9o"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="RenameListView" customModule="Lists" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -30,13 +29,13 @@
                     <items>
                         <barButtonItem systemItem="cancel" id="hLM-4y-t8C">
                             <connections>
-                                <action selector="cancel:" destination="-1" id="RSl-u5-gwe"/>
+                                <action selector="cancel:" destination="i5M-Pr-FkT" id="Hfe-Nw-xWe"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem systemItem="flexibleSpace" id="BvZ-gD-Dnh"/>
                         <barButtonItem title="Rename" id="S2h-vp-CU1">
                             <connections>
-                                <action selector="rename:" destination="-1" id="Gp5-bA-Tky"/>
+                                <action selector="rename:" destination="i5M-Pr-FkT" id="TtT-mj-aBO"/>
                             </connections>
                         </barButtonItem>
                     </items>
@@ -71,7 +70,10 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="117.59999999999999" y="152.47376311844079"/>
+            <connections>
+                <outlet property="textField" destination="l3m-7x-IT1" id="bby-8x-lvp"/>
+            </connections>
+            <point key="canvasLocation" x="-89" y="-27"/>
         </view>
     </objects>
 </document>

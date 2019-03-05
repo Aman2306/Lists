@@ -6,6 +6,8 @@
 //  Copyright © 2019 Aman Meena. All rights reserved.
 //
 
+// Project link https://www.appcoda.com/data-passing-ios/
+
 import UIKit
 
 class AllListsViewController: UIViewController {
@@ -102,6 +104,7 @@ class AllListsViewController: UIViewController {
     
     // MARK: - Custom Methods
     
+    
     func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
@@ -138,6 +141,19 @@ class AllListsViewController: UIViewController {
             
             // Add action handlers here!
             
+            
+            renameListView?.handleCancelRenaming {
+                self.renameListView?.removeFromSuperview()
+                self.renameListView = nil
+            }
+            renameListView?.handleRenaming(handler: { (listName) in
+                if let index = self.selectedListIndex {
+                    self.listManager.lists[index].name = listName
+                    self.tableView.reloadData()
+                    self.renameListView?.removeFromSuperview()
+                    self.renameListView = nil
+                }
+            })
         }
     }
     

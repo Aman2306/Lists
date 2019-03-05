@@ -17,7 +17,8 @@ class RenameListView: UIView {
     
     // MARK: - Properties
     
-    
+    var cancelHandler: (() -> Void)?
+    var renameHandler: ((_ name: String) -> Void)?
     
     // MARK: - Init
     
@@ -34,6 +35,14 @@ class RenameListView: UIView {
     
     
     // MARK: - Custom Methods
+
+    func handleRenaming(handler: @escaping (_ name: String) -> Void) {
+        renameHandler = handler
+    }
+    
+    func handleCancelRenaming(handler: @escaping () -> Void) {
+        cancelHandler = handler
+    }
     
     fileprivate func loadContent() {
         if let nibContents = Bundle.main.loadNibNamed("RenameListView", owner: self, options: nil) {
@@ -55,10 +64,19 @@ class RenameListView: UIView {
     // MARK: - IBAction Methods
 
     @IBAction func rename(_ sender: Any) {
-        
+        guard let text = textField.text else { return }
+        if text != "" {
+            if let handler = renameHandler {
+                handler(text)
+            }
+        }
     }
+    
+    
     @IBAction func cancel(_ sender: Any) {
-        
+        if let handler = cancelHandler {
+            handler()
+        }
     }
     
 }
